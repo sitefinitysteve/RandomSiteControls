@@ -1,0 +1,10 @@
+﻿[
+  {
+    "outputFile": "DocumentFolderList/Resources/DocumentFolderList.css",
+    "inputFile": "DocumentFolderList/Resources/DocumentFolderList.less"
+  },
+  {
+    "outputFile": "DocumentFolderList/Resources/DocumentFolderList.es5.js",
+    "inputFile": "DocumentFolderList/Resources/DocumentFolderList.js"
+  }
+]

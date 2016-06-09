@@ -1,0 +1,7 @@
+.sfsControlTabStripConfiguratorIcon,.sfsControlSqlGridIcon,.sfsControlButtonIcon,.sfsControlBackgroundImageIcon,.sfsControlFancyBoxScripts{background-image:url(<% = WebResource("RandomSiteControls.Common.controlicons.gif") %>)!important;background-position:0 0!important}
+.sfsControlSqlGridIcon{background-position:0 -202px!important}
+.sfsControlButtonIcon{background-position:0 -100px!important}
+.sfsControlBackgroundImageIcon{background-position:0 -317px!important}
+.sfsControlFancyBoxScripts{background-position:0 -488px!important}
+.sfsLayoutFancyBoxIcon{background-image:url(<% = WebResource("RandomSiteControls.Common.layouts.gif") %>)!important}
+.sfsLayoutTabBoxIcon{background-image:url(<% = WebResource("RandomSiteControls.Common.layouts.gif") %>)!important;background-position:0 -100px!important}

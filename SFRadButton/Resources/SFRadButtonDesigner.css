@@ -1,0 +1,88 @@
+﻿.autopostback,
+.checkBox{
+}
+
+.autopostback input,
+.checkBox input{
+
+}
+
+.autoPostBack label,
+.checkBox label{
+    padding-right: 4px;
+}
+    
+.RadComboBoxWithLabel table{
+    width: 200px !important;
+}
+
+.sfNavModes li label {
+    padding-left: 0;
+}
+
+.customIconList li label{
+    padding-left: 15px;
+}
+
+#customIconContainer{
+    clear:both;
+}
+
+.customIconList{
+    float:left;
+    padding-right: 33px;
+}
+
+.linkButton{
+    color:#105CB6;
+    font-size: 10px;
+    padding-left:5px;
+}
+
+.horizAlign{
+    padding-top:12px
+}
+
+.none{
+    padding-left:0px !important;
+}
+
+.sfTargetList li,.generalList li{
+    padding-bottom: 10px;
+}
+
+.placementList li{
+    float:left;
+    padding-right: 20px;
+}
+    
+.positionList label{
+    display: inline-block;
+    width: 41px !important;
+}
+
+.autopostback label{
+    cursor: default !important;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+}
+    
+.paddingList{
+}
+    
+.sfSelectorDialog .sfContentViews h2{
+    margin-top:0 !important;
+}
+
+.sfSelectorDialog .sfSwitchControlViews{
+    padding-bottom: 14px !important;
+}
+
+#comboSkinLabel{
+    color: Red;
+}
+
+#CssClass{
+    width: 192px;
+}

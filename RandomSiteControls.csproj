@@ -1,0 +1,416 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C1DF181E-F782-4EE9-867C-6ABADA59E0CE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RandomSiteControls</RootNamespace>
+    <AssemblyName>RandomSiteControls</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Nonshipping>true</Nonshipping>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\RandomSiteControls-Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.IdentityModel">
+      <HintPath>..\..\Web\bin\Microsoft.IdentityModel.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack">
+      <HintPath>..\..\Web\bin\ServiceStack.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Common">
+      <HintPath>..\..\Web\bin\ServiceStack.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Text">
+      <HintPath>..\..\Web\bin\ServiceStack.Text.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="Telerik.OpenAccess">
+      <HintPath>..\..\Web\bin\Telerik.OpenAccess.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity">
+      <HintPath>..\..\Web\bin\Telerik.Sitefinity.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Model">
+      <HintPath>..\..\Web\bin\Telerik.Sitefinity.Model.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Utilities">
+      <HintPath>..\..\Web\bin\Telerik.Sitefinity.Utilities.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Telerik.Web.UI">
+      <HintPath>..\..\Web\bin\Telerik.Web.UI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BackgroundImage\BackgroundImage.cs" />
+    <Compile Include="BackgroundImage\BackgroundImageDesigner.cs" />
+    <Compile Include="Breadcrumb\CleanBreadcrumb.cs" />
+    <Compile Include="Common\EmbedPositionEnum.cs" />
+    <Compile Include="Configuration\ContentLiteralConfig.cs" />
+    <Compile Include="Configuration\DisqusConfig.cs" />
+    <Compile Include="Configuration\FreshdeskElement.cs" />
+    <Compile Include="Configuration\HttpHeaderElement.cs" />
+    <Compile Include="Configuration\PlaceholderConfig.cs" />
+    <Compile Include="Configuration\ScriptStyleConfig.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\SitefinitySteveConfig.cs" />
+    <Compile Include="Configuration\SkinElement.cs" />
+    <Compile Include="Disqus\Comment\Designer\DisqusCommentBoxDesigner.cs" />
+    <Compile Include="Disqus\Comment\DisqusCommentBox.cs" />
+    <Compile Include="Disqus\Combination\Designer\DisqusCombinationDesigner.cs" />
+    <Compile Include="Disqus\Combination\DisqusCombination.cs" />
+    <Compile Include="Disqus\TopCommenters\Designer\TopCommentersDesigner.cs" />
+    <Compile Include="Disqus\TopCommenters\TopCommenters.cs" />
+    <Compile Include="Disqus\PopularThreads\Designer\PopularThreadsDesigner.cs" />
+    <Compile Include="Disqus\PopularThreads\PopularThreads.cs" />
+    <Compile Include="Disqus\RecentComments\Designer\RecentCommentsDesigner.cs" />
+    <Compile Include="Disqus\RecentComments\RecentComments.cs" />
+    <Compile Include="DocumentFolderList\DocumentFolderList.cs" />
+    <Compile Include="DocumentFolderList\DocumentFolderListDesigner.cs" />
+    <Compile Include="ErrorControl\ErrorStatusCode.cs" />
+    <Compile Include="Extensions\CollectionExtensions.cs" />
+    <Compile Include="Extensions\DynamicContentExtensions.cs" />
+    <Compile Include="Extensions\DateTimeExtensions.cs" />
+    <Compile Include="Extensions\PublishingExtensions.cs" />
+    <Compile Include="Extensions\UserExtensions.cs" />
+    <Compile Include="Extensions\GeneralExtensions.cs" />
+    <Compile Include="Extensions\GuidExtensions.cs" />
+    <Compile Include="Extensions\HierarchicalTaxonExtensions.cs" />
+    <Compile Include="Extensions\MarkupExtensions.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="Extensions\TaxonExtensions.cs" />
+    <Compile Include="Forms\FormCaptcha.cs" />
+    <Compile Include="HttpModules\RemoveHttpHeadersModule.cs" />
+    <Compile Include="ContentLiteral\ContentLiteral.cs" />
+    <Compile Include="ContentLiteral\Designer\ContentLiteralDesigner.cs" />
+    <Compile Include="Installer.cs" />
+    <Compile Include="Methods\Helpers.cs" />
+    <Compile Include="Methods\RandomSiteControlsUtil.cs" />
+    <Compile Include="PageTitle\Designer\PageTitleDesigner.cs" />
+    <Compile Include="PageTitle\PageTitle.cs" />
+    <Compile Include="Placeholder\Designer\PlaceholderDesigner.cs" />
+    <Compile Include="Placeholder\Placeholder.cs" />
+    <Compile Include="RssConsumer\Designer\RssConsumerDesigner.cs" />
+    <Compile Include="RssConsumer\RssConsumer.cs" />
+    <Compile Include="ScriptStyle\Designer\ScriptStyleDesigner.cs" />
+    <Compile Include="ScriptStyle\ScriptStyle.cs" />
+    <Compile Include="SFRadButton\SFRadButton.cs" />
+    <Compile Include="SFRadButton\SFRadButtonDesigner.cs" />
+    <Compile Include="Common\SteveControlBase.cs" />
+    <Compile Include="Common\SteveControlDesignerBase.cs" />
+    <Compile Include="Common\SteveLayoutControlBase.cs" />
+    <Compile Include="Button\Button.cs" />
+    <Compile Include="Button\ButtonDesigner.cs" />
+    <Compile Include="FancyBox\FancyBoxLayout.cs" />
+    <Compile Include="Layouts\BlockQuoteLayout.cs" />
+    <Compile Include="Layouts\SimpleWrapperLayout.cs" />
+    <Compile Include="LocationEnum.cs" />
+    <Compile Include="PageData\PageData.cs" />
+    <Compile Include="PageData\PageDataDesigner.cs" />
+    <Compile Include="SkinEnum.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SSO\Freshdesk\Freshdesk.cs" />
+    <Compile Include="TabStrip\TabStripVerticalLayout.cs" />
+    <Compile Include="TabStrip\TabStripDesigner.cs" />
+    <Compile Include="TabStrip\TabStripConfigurator.cs" />
+    <Compile Include="TabStrip\TabStripLayout.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="compilerconfig.json" />
+    <None Include="compilerconfig.json.defaults">
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </None>
+    <None Include="Disqus\Comment\DisqusCommentBox.min.js.map">
+      <DependentUpon>DisqusCommentBox.js</DependentUpon>
+    </None>
+    <EmbeddedResource Include="FancyBox\Resources\fancybox-steve-layout.min.js.map">
+      <DependentUpon>fancybox-steve-layout.min.js</DependentUpon>
+    </EmbeddedResource>
+    <None Include="TabStrip\Resources\TabStrip.less">
+      <Compile>True</Compile>
+      <Minify>True</Minify>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TabStrip\Views\TabStripLayout.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TabStrip\Views\TabStripConfigurator.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TabStrip\Resources\TabStrip.js">
+      <Compile>True</Compile>
+      <Minify>True</Minify>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TabStrip\Views\TabStripDesigner.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TabStrip\Resources\TabStripDesigner.js">
+      <Compile>True</Compile>
+      <Minify>False</Minify>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TabStrip\Resources\TabStrip.css">
+      <DependentUpon>TabStrip.less</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabStrip\Resources\TabStrip.min.css">
+      <DependentUpon>TabStrip.css</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FancyBox\Resources\fancybox-steve.min.css">
+      <DependentUpon>fancybox-steve.css</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Placeholder\Placeholder.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Placeholder\Designer\PlaceholderDesigner.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Placeholder\Designer\PlaceholderDesigner.js" />
+    <EmbeddedResource Include="ContentLiteral\ContentLiteral.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContentLiteral\Designer\ContentLiteralDesigner.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContentLiteral\Designer\ContentLiteralDesigner.js" />
+    <EmbeddedResource Include="ScriptStyle\ScriptStyle.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScriptStyle\Designer\ScriptStyleDesigner.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScriptStyle\Designer\ScriptStyleDesigner.js" />
+    <EmbeddedResource Include="Common\CodeMirror\closebrackets.js" />
+    <EmbeddedResource Include="Disqus\Comment\DisqusCommentBox.js" />
+    <EmbeddedResource Include="Disqus\Comment\DisqusCommentBox.min.js">
+      <DependentUpon>DisqusCommentBox.js</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageTitle\PageTitle.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageTitle\Designer\PageTitleDesigner.ascx" />
+    <EmbeddedResource Include="PageTitle\Designer\PageTitleDesigner.js" />
+    <EmbeddedResource Include="RssConsumer\RssConsumer.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RssConsumer\Designer\RssConsumerDesigner.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RssConsumer\Designer\RssConsumerDesigner.js" />
+    <EmbeddedResource Include="FancyBox\Resources\fancybox-steve-layout.min.js">
+      <DependentUpon>fancybox-steve-layout.js</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FancyBox\Resources\jquery.fancybox-1.3.8.min.js" />
+    <EmbeddedResource Include="DocumentFolderList\Resources\DocumentFolderList.js" />
+    <EmbeddedResource Include="DocumentFolderList\Resources\DocumentFolderListDesigner.css" />
+    <EmbeddedResource Include="DocumentFolderList\Views\DocumentFolderListTemplate.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </EmbeddedResource>
+    <None Include="DocumentFolderList\Resources\DocumentFolderList.less" />
+    <EmbeddedResource Include="DocumentFolderList\Views\DocumentFolderListDesigner.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentFolderList\Resources\DocumentFolderListDesigner.js" />
+    <Content Include="DocumentFolderList\Resources\DocumentFolderList.css">
+      <DependentUpon>DocumentFolderList.less</DependentUpon>
+    </Content>
+    <EmbeddedResource Include="DocumentFolderList\Resources\DocumentFolderList.min.css">
+      <DependentUpon>DocumentFolderList.css</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentFolderList\Resources\DocumentFolderList.es5.js">
+      <DependentUpon>DocumentFolderList.js</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentFolderList\Resources\DocumentFolderList.es5.min.js">
+      <DependentUpon>DocumentFolderList.es5.js</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="TabStrip\Resources\TabStrip.combined.js">
+      <DependentUpon>TabStrip.js</DependentUpon>
+    </Content>
+    <EmbeddedResource Include="Common\Designer.min.css">
+      <DependentUpon>Designer.css</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFRadButton\Resources\SFRadButton.min.js">
+      <DependentUpon>SFRadButton.js</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabStrip\Resources\TabStrip.min.js">
+      <DependentUpon>TabStrip.js</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Button\Resources\ButtonDesigner.css" />
+    <EmbeddedResource Include="Button\Resources\ButtonDesigner.js" />
+    <EmbeddedResource Include="Button\Views\ButtonDesigner.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Button\Views\ButtonTemplate.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\common.min.js">
+      <DependentUpon>common.js</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Disqus\Comment\DisqusCommentBox.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Disqus\Comment\Designer\DisqusCommentBoxDesigner.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Disqus\Comment\Designer\DisqusCommentBoxDesigner.js" />
+    <EmbeddedResource Include="Disqus\Combination\Designer\DisqusCombinationDesigner.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Disqus\Combination\Designer\DisqusCombinationDesigner.js" />
+    <EmbeddedResource Include="Disqus\Combination\DisqusCombination.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Disqus\RecentComments\Designer\RecentCommentsDesigner.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Disqus\RecentComments\Designer\RecentCommentsDesigner.js" />
+    <EmbeddedResource Include="Disqus\RecentComments\RecentComments.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Disqus\PopularThreads\Designer\PopularThreadsDesigner.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Disqus\PopularThreads\Designer\PopularThreadsDesigner.js" />
+    <EmbeddedResource Include="Disqus\PopularThreads\PopularThreads.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Disqus\TopCommenters\Designer\TopCommentersDesigner.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Disqus\TopCommenters\Designer\TopCommentersDesigner.js" />
+    <EmbeddedResource Include="Disqus\TopCommenters\TopCommenters.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </EmbeddedResource>
+    <Content Include="settings.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <EmbeddedResource Include="TabStrip\Views\TabStripVerticalLayout.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFRadButton\Resources\SFRadButtonDesigner.css" />
+    <EmbeddedResource Include="SFRadButton\Views\SFRadButtonTemplate.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFRadButton\Views\SFRadButtonDesigner.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFRadButton\Resources\SFRadButtonDesigner.js" />
+    <EmbeddedResource Include="Common\layouts.gif" />
+    <EmbeddedResource Include="Common\Designer.css">
+      <Compile>True</Compile>
+      <Minify>True</Minify>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FancyBox\Views\FancyBoxLayout.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FancyBox\Resources\fancybox-steve-layout.js">
+      <Compile>True</Compile>
+      <Minify>True</Minify>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\common.js">
+      <Compile>True</Compile>
+      <Minify>True</Minify>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FancyBox\Resources\fancybox-steve.css">
+      <Compile>True</Compile>
+      <Minify>True</Minify>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\controlicons.gif" />
+    <EmbeddedResource Include="Layouts\Views\SimpleWrapperLayout.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BackgroundImage\Views\BackgroundImageTemplate.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BackgroundImage\Resources\BackgroundImage.js" />
+    <EmbeddedResource Include="BackgroundImage\Resources\BackgroundImageDesigner.js" />
+    <EmbeddedResource Include="BackgroundImage\Views\BackgroundImageDesigner.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\Views\BlockQuoteLayout.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageData\Views\PageDataDesigner.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageData\Views\PageDataTemplate.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageData\Resources\PageDataDesigner.css" />
+    <EmbeddedResource Include="PageData\Resources\PageDataDesigner.js" />
+    <EmbeddedResource Include="FancyBox\Resources\fblayouts.gif" />
+    <EmbeddedResource Include="SFRadButton\Resources\SFRadButton.js">
+      <Compile>True</Compile>
+      <Minify>True</Minify>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FancyBox\Resources\close-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Layouts\Resources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

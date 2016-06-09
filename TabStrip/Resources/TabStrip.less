@@ -1,0 +1,257 @@
+﻿.sfPageEditor {
+    .multiPageInner {
+        &.tabChildInner {
+            padding: 5px;
+        }
+    } 
+
+    .tabStripContainer.vertical {
+        .multiPageInner {
+            border: 1px dotted #CCCCCC;
+        }
+    }
+
+    .tabStripContainer.horizontal {
+        .tabContainer.tabRoot {
+            border: 1px dotted #CCCCCC;
+        }
+    }
+
+    &.zeContentMode {
+        .tabStripContainer {
+
+            .multiPageInner {
+                .rdTop {
+                    //display: none; //Not sure why this was here
+                }
+            }
+        }
+    } 
+
+    &.zeLayoutMode {
+        .multiPageInner {
+            > .zeDockZoneEmpty {
+                //background: none !important;
+                /*
+                &:before {
+                    background: #FFE6E6 !important;
+                    display: block;
+                    text-align: center;
+                    width: 100%;
+                    height: 80px;
+                    padding-top: 53px;
+                    color: #7D7D7D;
+                    content: "Drag in some child layouts, each root one represents a new tab";
+                }*/
+
+                &.rdPlaceHolder:hover:before {
+                    background: #FFFFE6 !important;
+                    color: #AAA;
+                }
+            }
+        }
+
+        .tabConfigurator {
+        }
+    }
+}
+.zeLayoutMode .sfPageContainer .tabContainer .zeDockZoneEmpty,.sfPageContainer .tabContainer .sf_cols .zeDockZoneEmpty {
+    display: inherit;
+}
+.zeLayoutMode {
+    .sfPageContainer {
+        .tabConfigurator {
+            .zeDockZoneEmpty {
+                display:none;
+            }
+        }
+    }
+}
+.tabDesignerContainer {
+    .tabContainer {
+        margin-bottom: 10px;
+    }
+}
+.sfPageContainer {
+    .tabConfigurator {
+        margin-bottom: 10px;
+
+        .zeDockZoneEmpty {
+            background: none;
+            margin-bottom: 0 !important;
+            /*
+            &:before {
+                content: "[Drag in the Tabstrip Configurator *ONLY*]";
+                width: 100%;
+                text-align: center;
+                font-family: sans-serif;
+                display: block;
+                color: #8C8C8C;
+                font-size: 14px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }*/
+        }
+    }
+
+    .multiPageInner {
+        .zeDockZoneEmpty {
+            //background: url(~'<% = WebResource("RandomSiteControls.TabStrip.Resources.tablayouts.png") %>');
+        }
+
+
+        .zeLayoutDock .rdTable .rdMiddle .rdCenter .rdContent .sf_cols {
+            &:before {
+                background-color: #CCCCCC;
+                font-family: sans-serif;
+                font-size: 11px;
+                font-weight: 700;
+                height: 20px;
+                width: 100%;
+                margin-bottom: 2px;
+                line-height: 20px;
+                padding-left: 8px;
+                display: inline-block;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+                border: 1px solid #BBBBBB;
+            }
+
+            .RadDockZone .sf_cols:before {
+                display: none;
+                height: 0;
+            }
+        } 
+
+        > .RadDockZone {
+            > .zeLayoutDock {
+                .sf_cols {
+                    &:before {
+                        content: "TabStrip Tab";
+                    }
+                }
+            /*
+                &:nth-child(1) .sf_cols {
+                    &:before {
+                        content: "TabStrip Tab 1";
+                    }
+                }
+
+                &:nth-child(2) .sf_cols {
+                    &:before {
+                        content: "TabStrip Tab 2";
+                    }
+                }
+
+                &:nth-child(3) .sf_cols {
+                    &:before {
+                        content: "TabStrip Tab 3";
+                    }
+                }
+
+                &:nth-child(4) .sf_cols {
+                    &:before {
+                        content: "TabStrip Tab 4";
+                    }
+                }
+
+                &:nth-child(5) .sf_cols {
+                    &:before {
+                        content: "TabStrip Tab 5";
+                    }
+                }
+
+                &:nth-child(6) .sf_cols {
+                    &:before {
+                        content: "TabStrip Tab 6";
+                    }
+                }
+
+                &:nth-child(7) .sf_cols {
+                    &:before {
+                        content: "TabStrip Tab 7";
+                    }
+                }
+
+                &:nth-child(8) .sf_cols {
+                    &:before {
+                        content: "TabStrip Tab 8";
+                    }
+                }
+
+                &:nth-child(9) .sf_cols {
+                    &:before {
+                        content: "TabStrip Tab 9";
+                    }
+                }
+
+                &:nth-child(10) .sf_cols {
+                    &:before {
+                        content: "TabStrip Tab 10";
+                    }
+                }
+                */
+            }
+        }
+    }
+
+    .tabContainer {
+        .zeDockZoneEmpty {
+            display: none;
+        }
+    }
+}
+
+
+
+
+.tabDesignContainer{
+    /*display:none;*/
+	.multiPageInner > .sf_cols{
+		opacity: 0;
+		height: 0;
+		overflow: hidden;
+        display: block;
+	}
+
+	.tab-page {
+		opacity: 0;
+		-moz-transition: opacity 0.25s ease-out;
+		-o-transition: opacity 0.25s ease-out;
+		-webkit-transition: opacity 0.25s ease-out;
+		transition: opacity 0.25s ease-out;
+		height: 0;
+		overflow: hidden;
+
+        &.active {
+	      opacity:1;
+          padding-top: 5px;
+	      height: auto;
+	    }
+	}
+}
+
+.old-ie-fix,
+.no-animations{
+	.tab-page{
+		display:none;
+		height: auto;
+	}
+
+	.tab-page.active{
+		display:block;
+	}
+}
+
+
+
+.sfPageEditor .tabDesignContainer .tab-page {
+    display:block;
+    height: 100%;
+	opacity: 1;
+}
+
+.sfPageEditor .tabStrip.tabStripContainer{
+    margin-bottom: 15px;
+}

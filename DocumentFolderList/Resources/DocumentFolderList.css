@@ -1,0 +1,12 @@
+﻿.sfs_docFolderList {
+  margin-bottom: 20px;
+}
+.sfs_docFolderList .RadTreeView {
+  font-family: inherit !important;
+}
+.sfs_docFolderList.sfSmallIcns .sfdownloadFile {
+  padding-bottom: 2px !important;
+}
+.sfs_docFolderList.sfLargeIcns .sfdownloadFile {
+  padding-bottom: 40px !important;
+}
