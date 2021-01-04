@@ -322,7 +322,7 @@ namespace RandomSiteControls
                 this.Visible = true;
 
                 if(!String.IsNullOrEmpty(this.Description)){
-                    string markup = Config.Get<RandomSiteControls.Configuration.SitefinitySteveConfig>().ScriptStyle.DescriptionMarkup;
+                    string markup = Telerik.Sitefinity.Configuration.Config.Get<RandomSiteControls.Configuration.SitefinitySteveConfig>().ScriptStyle.DescriptionMarkup;
                     string html = String.Format("<div class='scriptstyle-description-wrapper'>{0}<span class='description'>{1}</span></div>", markup, this.Description);
 
                     writer.Write(html);    

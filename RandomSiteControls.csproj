@@ -11,7 +11,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>RandomSiteControls</RootNamespace>
     <AssemblyName>RandomSiteControls</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Nonshipping>true</Nonshipping>
     <SccProjectName>SAK</SccProjectName>
@@ -40,17 +40,14 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.IdentityModel">
-      <HintPath>..\..\Web\bin\Microsoft.IdentityModel.dll</HintPath>
-    </Reference>
     <Reference Include="ServiceStack">
-      <HintPath>..\..\Web\bin\ServiceStack.dll</HintPath>
+      <HintPath>..\..\Dropbox\Sitefinity\13.2.7500.0\_EmptyProject\bin\ServiceStack.dll</HintPath>
     </Reference>
     <Reference Include="ServiceStack.Common">
-      <HintPath>..\..\Web\bin\ServiceStack.Common.dll</HintPath>
+      <HintPath>..\..\Dropbox\Sitefinity\13.2.7500.0\_EmptyProject\bin\ServiceStack.Common.dll</HintPath>
     </Reference>
     <Reference Include="ServiceStack.Text">
-      <HintPath>..\..\Web\bin\ServiceStack.Text.dll</HintPath>
+      <HintPath>..\..\Dropbox\Sitefinity\13.2.7500.0\_EmptyProject\bin\ServiceStack.Text.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
@@ -58,8 +55,8 @@
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.Web.Extensions" />
-    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <Private>False</Private>
+    <Reference Include="System.Web.WebPages">
+      <HintPath>..\..\Dropbox\Sitefinity\13.2.7500.0\_EmptyProject\bin\System.Web.WebPages.dll</HintPath>
     </Reference>
     <Reference Include="System.XML" />
     <Reference Include="System.Xml.Linq" />
@@ -68,24 +65,19 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
     <Reference Include="Telerik.OpenAccess">
-      <HintPath>..\..\Web\bin\Telerik.OpenAccess.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\Dropbox\Sitefinity\13.2.7500.0\_EmptyProject\bin\Telerik.OpenAccess.dll</HintPath>
     </Reference>
     <Reference Include="Telerik.Sitefinity">
-      <HintPath>..\..\Web\bin\Telerik.Sitefinity.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\Dropbox\Sitefinity\13.2.7500.0\_EmptyProject\bin\Telerik.Sitefinity.dll</HintPath>
     </Reference>
     <Reference Include="Telerik.Sitefinity.Model">
-      <HintPath>..\..\Web\bin\Telerik.Sitefinity.Model.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\Dropbox\Sitefinity\13.2.7500.0\_EmptyProject\bin\Telerik.Sitefinity.Model.dll</HintPath>
     </Reference>
     <Reference Include="Telerik.Sitefinity.Utilities">
-      <HintPath>..\..\Web\bin\Telerik.Sitefinity.Utilities.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\Dropbox\Sitefinity\13.2.7500.0\_EmptyProject\bin\Telerik.Sitefinity.Utilities.dll</HintPath>
     </Reference>
     <Reference Include="Telerik.Web.UI">
-      <HintPath>..\..\Web\bin\Telerik.Web.UI.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\Dropbox\Sitefinity\13.2.7500.0\_EmptyProject\bin\Telerik.Web.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
